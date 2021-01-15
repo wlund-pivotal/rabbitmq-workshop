@@ -1,17 +1,17 @@
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: lab-markdown-sample
+  name: rabbitmq-eduk8s-workshop
 spec:
-  title: Markdown Sample
-  description: A sample workshop using Markdown
-  vendor: eduk8s.io
+  title: RabbitMQ Workshop
+  description: Operator Workshop for installing, monitoring and operating RabbitMQ
+  vendor: tanzu.vmware.com
   difficulty: beginner
   duration: 15m
-  url: https://github.com/eduk8s/lab-markdown-sample
+  url: https://github.com/wlund-pivotal/rabbitmq-workshop
   content:
     #image: quay.io/eduk8s/lab-markdown-sample:master
-    files: github.com/eduk8s/lab-markdown-sample
+    files: github.com/wlund-pivotal/rabbitmq-workshop
   session:
     namespaces:
       budget: small
