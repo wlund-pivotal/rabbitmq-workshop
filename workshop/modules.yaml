@@ -1,4 +1,7 @@
 modules:
+    objectives:
+        name: Workshop Overview
+	exit_sign: Spring Initialzr
     01_spring_initialzr:
         name: Spring Initialzr
         exit_sign: Setup Environment
