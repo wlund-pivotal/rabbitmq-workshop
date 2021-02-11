@@ -10,7 +10,7 @@ spec:
   duration: 15m
   url: https://github.com/wlund-pivotal/rabbitmq-workshop
   content:
-    #image: quay.io/eduk8s/lab-markdown-sample:master
+    image: 192.168.64.6:5000/jdk11:latest
     files: github.com/wlund-pivotal/rabbitmq-workshop
   session:
     namespaces:
