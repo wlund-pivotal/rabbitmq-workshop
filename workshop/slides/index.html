@@ -5,6 +5,17 @@
 <title>Introduction to Messaging</title>
 </head>
 <body>
-<embed src="02-Introduction-to-messaging.pdf" width="100%" height="100%" type="application/pdf">
-</body>
+<div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+  document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+    var adobeDCView = 
+        new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
+    adobeDCView.previewFile({
+      content:{location: {url: "http://rabbitmq-training-portal-w01-s011.192.168.64.7.nip.io/slides/"}},
+      metaData:{fileName: "Bodea Brochure.pdf"}
+    }, {embedMode: "SIZED_CONTAINER"});
+  });
+</script></body>
 </html>
+
