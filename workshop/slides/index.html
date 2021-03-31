@@ -1,21 +1,24 @@
-<!doctype html>
-<html lang=en>
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset=utf-8>
-<title>Introduction to Messaging</title>
+ <title>Introduction to Messaging</title>
+ <meta charset="utf-8"/>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+ <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
-<body>
-<div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
-<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-<script type="text/javascript">
-  document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-    var adobeDCView = 
-        new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
-    adobeDCView.previewFile({
-      content:{location: {url: "http://rabbitmq-training-portal-w01-s011.192.168.64.7.nip.io/slides/"}},
-      metaData:{fileName: "Bodea Brochure.pdf"}
-    }, {embedMode: "SIZED_CONTAINER"});
-  });
-</script></body>
+<body style="margin: 0px">
+ <div id="adobe-dc-view"></div>
+ <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+ <script type="text/javascript">
+    document.addEventListener("adobe_dc_view_sdk.ready", function()
+    {
+        var adobeDCView = new AdobeDC.View({clientId: "4880a16f072145c883099c26e595fa49", divId: "adobe-dc-view"});
+        adobeDCView.previewFile(
+       {
+          content:{location: {url: "http://rabbitmq-training-portal-w01-s011.192.168.64.11.nip.io/slides/"}},
+          metaData: {fileName: "02-Introduction-to-messaging.pdf"}
+       });
+    });
+ </script>
+</body>
 </html>
-
