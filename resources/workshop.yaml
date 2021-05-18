@@ -10,9 +10,13 @@ spec:
   duration: 15m
   url: https://github.com/wlund-pivotal/rabbitmq-workshop
   content:
-    image: wxlund/jdk11:latest
+    image: jdk11-environment:*
     files: github.com/wlund-pivotal/rabbitmq-workshop
   session:
+    ingresses:
+    - name: RabbitMQ Admin
+      host: localhost
+      port: 15672
     namespaces:
       budget: small
     applications:
@@ -22,4 +26,6 @@ spec:
       console:
         enabled: true
       editor:
+        enabled: true
+      docker:
         enabled: true

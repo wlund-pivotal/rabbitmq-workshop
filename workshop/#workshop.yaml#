@@ -1,0 +1,10 @@
+	name: Markdown Sample
+
+modules:
+    activate:
+    - objectives
+    - 01_spring_initialzr
+    - workshop-overview
+    - setup-environment
+    - exercises/01-sample-content
+    - workshop-summary
